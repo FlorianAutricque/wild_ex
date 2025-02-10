@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: grey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 60%;
+  background-color: white;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  background-color: blueviolet;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+}
