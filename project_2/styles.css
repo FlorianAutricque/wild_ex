@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.container_presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: beige;
+  padding: 0 4rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color: rgb(188, 64, 64);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
