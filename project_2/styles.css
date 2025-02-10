@@ -23,6 +23,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-bottom: 2rem;
 }
 
 .navbar ul {
@@ -45,4 +47,25 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+th {
+  text-align: center;
 }
