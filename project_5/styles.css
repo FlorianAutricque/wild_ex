@@ -1,7 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+:root {
+  --color-red: red;
+}
+
 body {
   width: 100vw;
   overflow: hidden;
   margin: 0;
+}
+
+h1 {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-txt-img p:first-child {
+  display: inline-block;
+  border: 2px solid var(--color-red);
+  border-radius: 24px;
+  padding: 1rem;
+
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+main div.container-txt-img p:nth-child(even) {
+  background-color: var(--color-red);
+}
+
+.txt-two {
+  color: brown;
+  line-height: 130%;
+}
+
+.container-hero {
+  background: url("https://images.unsplash.com/photo-1600077106724-946750eeaf3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat bottom center;
+  background-size: cover;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 
 header {
@@ -10,6 +63,7 @@ header {
 }
 
 nav {
+  margin-top: 3rem;
   background-color: rgb(170, 170, 170);
   padding: 0.5rem 2rem;
   border-radius: 25px;
@@ -22,10 +76,16 @@ nav {
 nav ul {
   display: flex;
   gap: 3rem;
+  /* list-style: none; */
 }
 
 nav ul li {
   list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -45,4 +105,8 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+
+p {
+  color: rgb(15, 15, 15);
 }

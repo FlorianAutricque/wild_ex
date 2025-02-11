@@ -1,0 +1,61 @@
+/* INIT */
+:root {
+  --color-blue: #7fb7be;
+  --color-lightblue: #d3f3ee;
+  --color-yellowgreen: #dacc3e;
+  --color-red: #bc2c1a;
+  --color-purple: #7d1538;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-lightblue);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-red);
+  padding: 0 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  transition: all 500ms ease-in-out;
+}
+
+/* HERO */
+.container-hero {
+  background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2FsYXhpZXxlbnwwfDB8MHx8fDI%3D");
+  border-radius: 0 0 16px 16px;
+  color: white;
+  padding: 1rem;
+}
+
+.container-images-gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: flex;
+}
+
+h2 {
+  color: white;
+}
