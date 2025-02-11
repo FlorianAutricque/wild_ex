@@ -12,6 +12,21 @@ body {
   padding: 0;
   background-color: var(--color-lightblue);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+section h2 {
+  color: var(--color-purple);
+}
+
+.sitamet {
+  font-weight: bold;
+  color: #bc2c1a;
+}
+
+/* MAIN CONT */
+.main-container-all {
+  padding: 0 4rem;
 }
 
 /* NAVBAR */
@@ -48,14 +63,45 @@ nav ul li a:hover {
   padding: 1rem;
 }
 
+.container-hero h2 {
+  color: white;
+}
+
+/* GALLERY */
+
+.container-images-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .container-images-gallery img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 16px;
-  display: flex;
 }
 
-h2 {
-  color: white;
+/* NEWS */
+
+section a {
+  color: var(--color-red);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-purple);
+  color: var(--color-yellowgreen);
+  height: 50px;
 }
