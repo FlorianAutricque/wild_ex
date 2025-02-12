@@ -15,6 +15,7 @@ body {
   height: 100vh;
 }
 
+/* TITLE AND LINKS */
 section h2 {
   color: var(--color-purple);
 }
@@ -68,7 +69,6 @@ nav ul li a:hover {
 }
 
 /* GALLERY */
-
 .container-images-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +85,6 @@ nav ul li a:hover {
 }
 
 /* NEWS */
-
 section a {
   color: var(--color-red);
   text-decoration: none;
