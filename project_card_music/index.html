@@ -4,11 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+
     <title>Document</title>
   </head>
   <body>
     <main>
-      <div class="glass"></div>
+      <!-- THUMBNAIL -->
+      <div class="container-thumbnail">
+        <div id="results-thumbnail"></div>
+      </div>
+
+      <!-- MAIN CONTAINER GLASS -->
+      <div class="glass">
+        <div class="container-top-part">
+          <div class="container-disk">
+            <img
+              class="disk"
+              src="https://i.postimg.cc/ZqhVJxg3/CD.png"
+              alt="cd"
+            />
+
+            <div id="results-title"></div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="container-input">
+          <input type="text" placeholder="Doums" id="searchQuery" />
+          <button id="searchButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </button>
+        </form>
+
+        <!-- VIDEO RESULTS -->
+        <div class="container-results">
+          <div id="results"></div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
