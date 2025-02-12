@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Designer</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <img
+          src="http://logobook.com/wp-content/uploads/2018/01/Robin_Industries_logo.svg"
+          alt="Logo personnel"
+        />
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <p>Découvrez mes créations et services de design</p>
+        <a href="#contact" class="cta-button">Contactez-moi</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="services">
+        <h2>Services Proposés</h2>
+
+        <div class="container-services">
+          <div class="service">
+            <div class="title-icon">
+              <img src="img/design-nib.svg" alt="Icone de plume" />
+              <h3>Design Graphique</h3>
+            </div>
+            <p>
+              Création de logos, brochures, affiches et autres supports visuels.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="title-icon">
+              <img src="img/code.svg" alt="Icone de balises html" />
+              <h3>Design Web</h3>
+            </div>
+            <p>Conception de sites web modernes et responsives.</p>
+          </div>
+
+          <div class="service">
+            <div class="title-icon">
+              <img src="img/eye.svg" alt="Icone d'oeil" />
+              <h3>Identité Visuelle</h3>
+            </div>
+            <p>
+              Développement de chartes graphiques et d'identités visuelles
+              complètes.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="title-icon">
+              <img src="img/palette.svg" alt="Icone de palette de peinture" />
+              <h3>Illustration</h3>
+            </div>
+            <p>Création d'illustrations uniques pour divers projets.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2>Galerie de Projets</h2>
+
+        <div class="container-gallery">
+          <div class="project">
+            <img src="img/modicapital.webp" alt="Modicapital" />
+            <h3>Modicapital</h3>
+            <p>Description du projet 1.</p>
+          </div>
+
+          <div class="project">
+            <img src="img/toblerone.webp" alt="Toblerone" />
+            <h3>Toblerone</h3>
+            <p>Description du projet 2.</p>
+          </div>
+
+          <div class="project">
+            <img src="img/jaguar.jpg" alt="Jaguar" />
+            <h3>Jaguar</h3>
+            <p>Description du projet 3.</p>
+          </div>
+
+          <div class="project">
+            <img src="img/sunvault.webp" alt="Sunvault" />
+            <h3>Sunvault</h3>
+            <p>Description du projet 4.</p>
+          </div>
+
+          <div class="project">
+            <img src="img/zesty.webp" alt="Zesty" />
+            <h3>Zesty</h3>
+            <p>Description du projet 5.</p>
+          </div>
+
+          <div class="project">
+            <img src="img/jungle.webp" alt="Jungle" />
+            <h3>Jungle</h3>
+            <p>Description du projet 6.</p>
+          </div>
+        </div>
+      </section>
+      <section class="biography">
+        <h2>À Propos de Moi</h2>
+        <p>
+          Je suis un designer passionné avec plusieurs années d'expérience dans
+          le domaine du design graphique et web. Mon objectif est de créer des
+          visuels attrayants et fonctionnels qui répondent aux besoins de mes
+          clients. J'aime explorer de nouvelles tendances et techniques pour
+          offrir des solutions innovantes et créatives.
+        </p>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Si vous avez un projet ou une idée en tête, n'hésitez pas à me
+          contacter. Je serais ravi de discuter de la manière dont nous pouvons
+          collaborer.
+        </p>
+
+        <div class="container-form">
+          <form action="#" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

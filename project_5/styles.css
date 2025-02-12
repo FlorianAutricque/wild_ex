@@ -3,6 +3,7 @@
 
 :root {
   --color-red: red;
+  --spacing-1: 2rem;
 }
 
 body {
@@ -26,22 +27,14 @@ p {
   font-style: normal;
 }
 
-.container-txt-img p:first-child {
-  display: inline-block;
-  border: 2px solid var(--color-red);
-  border-radius: 24px;
-  padding: 1rem;
-
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+.txt-two {
+  color: brown;
+  line-height: 130%;
 }
 
 main div.container-txt-img p:nth-child(even) {
   background-color: var(--color-red);
-}
-
-.txt-two {
-  color: brown;
-  line-height: 130%;
+  padding: var(--spacing-1);
 }
 
 .container-hero {
@@ -64,9 +57,9 @@ header {
 
 nav {
   margin-top: 3rem;
-  background-color: rgb(170, 170, 170);
+  background-color: #aaaaaa;
   padding: 0.5rem 2rem;
-  border-radius: 25px;
+  border-radius: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,10 +69,6 @@ nav {
 nav ul {
   display: flex;
   gap: 3rem;
-  /* list-style: none; */
-}
-
-nav ul li {
   list-style: none;
 }
 
@@ -109,4 +98,33 @@ footer {
 
 p {
   color: rgb(15, 15, 15);
+}
+
+.btn {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  border-radius: 24px;
+}
+
+.btn-1 {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-1:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.btn-2 {
+  transition: background-color 0.3s ease-in, color 0.3s ease-in,
+    transform 0.3s ease-in-out;
+}
+
+.btn-2:hover {
+  background-color: aqua;
+  color: black;
+  transform: scale(1.1);
 }
