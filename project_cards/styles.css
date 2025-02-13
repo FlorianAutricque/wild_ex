@@ -1,3 +1,5 @@
+/* INIT */
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,7 @@ body {
   margin: 0;
 }
 
+/* IFRAME */
 .container-iframe {
   height: 100vh;
 }
@@ -14,6 +17,7 @@ iframe {
   border: none;
 }
 
+/* NAVBAR */
 nav {
   background-color: rgb(105, 105, 105);
   padding: 0.7rem;
@@ -28,7 +32,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li:not(:last-child) a:hover {
   color: rgb(198, 198, 198);
   text-decoration: underline;
 }
@@ -37,6 +41,27 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 3rem;
   font-size: 1.4rem;
+}
+
+/* BTN */
+.btn {
+  display: inline-block;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 1.4rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* RESPONSIVE */
+@media (min-width: 450px) {
+  nav ul {
+    flex-direction: row;
+  }
 }
