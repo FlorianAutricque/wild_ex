@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" type="module"></script>
 
-    <title>Document</title>
+    <title>GlassMusic</title>
+
+    <!-- NOT RESPONSIVE  -->
   </head>
+
   <body>
     <main>
       <!-- THUMBNAIL -->
@@ -31,7 +34,10 @@
 
         <!-- FORM -->
         <form class="container-input">
-          <input type="text" placeholder="Doums" id="searchQuery" />
+          <div class="input-wrapper">
+            <input type="text" id="searchQuery" placeholder=" " required />
+            <label for="searchQuery">Music:</label>
+          </div>
           <button id="searchButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"

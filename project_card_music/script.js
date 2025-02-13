@@ -4,14 +4,9 @@ const searchButton = document.getElementById("searchButton");
 const searchQuery = document.getElementById("searchQuery");
 const resultsContainer = document.getElementById("results");
 const resultsContainerThumbnail = document.getElementById("results-thumbnail");
-const resultsContainerTtitle = document.getElementById("results-title");
+const resultsContainerTitle = document.getElementById("results-title");
 
-searchButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  const query = searchQuery.value.trim() || "so la lune rodé";
-
-  if (!query) return alert("Veuillez entrer un terme de recherche !");
-
+function searchYouTube(query = "doums roller champagne") {
   fetch(
     `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(
       query
@@ -22,7 +17,7 @@ searchButton.addEventListener("click", (e) => {
       resultsContainer.innerHTML = "";
 
       if (data.items.length === 0) {
-        resultsContainer.innerHTML = "<p>Aucun résultat trouvé.</p>";
+        resultsContainer.innerHTML = "<p>No results found</p>";
         return;
       }
 
@@ -31,33 +26,33 @@ searchButton.addEventListener("click", (e) => {
       const title = item.snippet.title;
       const thumbnail = item.snippet.thumbnails.medium.url;
 
-      const ttitleEl = `
-      <div>
-        <h2> ${title} </h2>
-      </div>
-    `;
-      resultsContainerTtitle.innerHTML = ttitleEl;
+      resultsContainerTitle.innerHTML = `<div><h2>${title}</h2></div>`;
+      resultsContainerThumbnail.innerHTML = `<div><img src="${thumbnail}" alt="${title}"></div>`;
 
-      const thumbnailEl = `
-      <div>
-        <img src="${thumbnail}" alt="${title}">
-      </div>
-    `;
-      resultsContainerThumbnail.innerHTML = thumbnailEl;
-
-      const videoElement = `
-          <div>            
-            <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/${videoId}" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
-          </div>
-        `;
-      resultsContainer.innerHTML = videoElement;
+      resultsContainer.innerHTML = `
+        <div>            
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/${videoId}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
     })
     .catch((error) => console.error("Erreur :", error));
+}
+
+// SEARCH ON CLICK BTN
+searchButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  const query = searchQuery.value.trim();
+  if (!query) return alert("Enter a music!");
+  searchYouTube(query);
+});
+
+window.addEventListener("load", () => {
+  searchYouTube();
 });
