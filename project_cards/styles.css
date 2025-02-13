@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container-iframe {
+  height: 100vh;
+}
+
+iframe {
+  border: none;
+}
+
+nav {
+  background-color: rgb(105, 105, 105);
+  padding: 0.7rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(198, 198, 198);
+  text-decoration: underline;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+}

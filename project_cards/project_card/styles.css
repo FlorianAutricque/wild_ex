@@ -66,6 +66,7 @@ main {
   padding: 0.4rem;
   border: none;
   transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .btn button:hover {

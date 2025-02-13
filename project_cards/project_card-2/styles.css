@@ -95,6 +95,7 @@ h1::before {
   padding: 0;
   transition: all 0.25s ease;
   outline: none;
+  cursor: pointer;
 }
 
 .kave-btn::before {

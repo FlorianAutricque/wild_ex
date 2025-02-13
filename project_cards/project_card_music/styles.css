@@ -29,6 +29,10 @@ main {
   margin-top: -3.5rem;
 }
 
+p {
+  text-align: right;
+}
+
 h2 {
   color: var(--color-txt);
   font-family: "Chakra Petch", serif;
