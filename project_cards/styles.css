@@ -21,7 +21,10 @@ iframe {
 nav {
   background-color: rgb(105, 105, 105);
   padding: 0.7rem;
-  font-size: 16px;
+}
+
+nav ul {
+  font-size: 1rem;
 }
 
 nav ul li {
