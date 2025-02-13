@@ -20,12 +20,28 @@ main {
 
 h1 {
   text-align: center;
+  display: none;
 }
 
-.btn {
+main > a:last-child {
   background-color: blueviolet;
   color: white;
   text-decoration: none;
   padding: 1rem;
   display: inline-block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    display: block;
+  }
+
+  .container {
+    flex-direction: row;
+  }
 }
